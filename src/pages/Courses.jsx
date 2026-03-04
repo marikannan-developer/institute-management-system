@@ -7,7 +7,7 @@ const Courses = () => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/courses")
+    axios.get("https://institute-management-system-production-5cfb.up.railway.app/students")
       .then(res => setCourses(res.data))
       .catch(err => console.log(err));
   }, []);
